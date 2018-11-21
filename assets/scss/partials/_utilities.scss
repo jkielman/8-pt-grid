@@ -1,0 +1,70 @@
+
+$scaleLength: 8;
+$unit: px;
+
+@for $i from 1 through $scaleLength {
+
+    $point: $i * 8;
+    $scale: $i * 1;
+
+    .m {
+      &-#{$scale} {
+        margin:$point + $unit;
+      }
+      &-t#{$scale} {
+        margin-top:$point + $unit;
+      }
+      &-r#{$scale} {
+        margin-right:$point + $unit;
+      }
+      &-b#{$scale} {
+        margin-bottom:$point + $unit;
+      }
+      &-l#{$scale} {
+        margin-left:$point + $unit;
+      }
+      &-h#{$scale} {
+        margin-right:$point + $unit;
+        margin-left:$point + $unit;
+      }
+      &-v#{$scale} {
+        margin-top:$point + $unit;
+        margin-bottom:$point + $unit;
+      }
+    }
+
+    .p {
+      &-#{$scale} {
+        padding:$point + $unit;
+      }
+      &-t#{$scale} {
+        padding-top:$point + $unit;
+      }
+      &-r#{$scale} {
+        padding-right:$point + $unit;
+      }
+      &-b#{$scale} {
+        padding-bottom:$point + $unit;
+      }
+      &-l#{$scale} {
+        padding-left:$point + $unit;
+      }
+      &-h#{$scale} {
+        padding-right:$point + $unit;
+        padding-left:$point + $unit;
+      }
+      &-v#{$scale} {
+        padding-top:$point + $unit;
+        padding-bottom:$point + $unit;
+      }
+    }
+
+}
+
+
+
+h1 {
+  font-family:$sansFontStack;
+  font-size: 2.281em;
+  font-weight:800;
+}
